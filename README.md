@@ -1,9 +1,4 @@
 ## PR Review Process
-### Adding Ticket Link in PR Comment Section and add reviewer to your team lead
-![image](https://github.com/user-attachments/assets/2c6858db-e5d1-4319-b7da-812da663bf27)
-
-
-
 
 ### Code Quality Checking :
 ### 1. **Variable/Function/Class/Interface Names**
@@ -156,7 +151,5 @@ Follow guidance of figma
 - **Good Practice:** Use CDNs for optimized image loading.
   - **JavaScript:** `<img src="https://cdn
 
-### Adding Comment of reviewer
 
-![image](https://github.com/user-attachments/assets/ece76ac9-b8fa-4c70-a0ca-37c9f33cb894)
 
