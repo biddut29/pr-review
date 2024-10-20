@@ -174,3 +174,8 @@ Follow guidance of figma
 ### 20. **Image Form CDN**
 - **Good Practice:** Use CDNs for optimized image loading.
   - **JavaScript:** `<img src="https://cdn
+
+### Adding Comment of reviewer
+
+![image](https://github.com/user-attachments/assets/ece76ac9-b8fa-4c70-a0ca-37c9f33cb894)
+
