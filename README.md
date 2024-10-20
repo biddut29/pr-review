@@ -1,4 +1,9 @@
 ## PR Review Process
+### Adding Ticket Link in PR Comment Section and add reviewer to your team lead
+![image](https://github.com/user-attachments/assets/2c6858db-e5d1-4319-b7da-812da663bf27)
+
+
+
 
 ### Code Quality Checking :
 ### 1. **Variable/Function/Class/Interface Names**
@@ -10,7 +15,7 @@
   - **JavaScript:** `let fn = "John";`
   - **.NET:** `public class U { public string f; }`
 
-### 3. **Error Handling**
+### 2. **Error Handling**
 - **Good Practice:** Use structured error handling.
   - **JavaScript:** 
     ```javascript
@@ -33,7 +38,7 @@
   - **JavaScript:** `// no try/catch`
   - **.NET:** `catch { /* ignore */ }`
 
-### 4. **Function Name**
+### 3. **Function Name**
 - **Good Practice:** Use verbs and be descriptive.
   - **JavaScript:** `function fetchUserData() {}`
   - **.NET:** `public void SaveUser() { }`
@@ -42,7 +47,7 @@
   - **JavaScript:** `function doStuff() {}`
   - **.NET:** `public void Process() { }`
 
-### 5. **Function Size**
+### 4. **Function Size**
 - **Good Practice:** Keep functions short and focused.
   - **JavaScript:** 
     ```javascript
@@ -71,27 +76,14 @@
     }
     ```
 
-### 6. **UI/UX for Frontend Codebase**
-- **Good Practice:** Keep UI components simple and focused.
-  - **JavaScript:** Use React components effectively.
-    ```javascript
-    const UserProfile = ({ user }) => <div>{user.name}</div>;
-    ```
-  
-- **Bad Practice:** Monolithic components that handle multiple responsibilities.
-  - **JavaScript:** 
-    ```javascript
-    const UserProfile = ({ user }) => { /* complex logic */ };
-    ```
-
-### 7. **Coding Consistency**
+### 6. **Coding Consistency**
 - **Good Practice:** Follow consistent naming and style conventions (e.g., ESLint, StyleCop).
   - **JavaScript:** Use Prettier for formatting.
   
 - **Bad Practice:** Inconsistent naming conventions and code styles.
   - **JavaScript:** Mixing camelCase, snake_case, etc.
 
-### 8. **Code Duplication**
+### 7. **Code Duplication**
 - **Good Practice:** Avoid duplicate code by creating reusable functions or components.
   - **JavaScript:** 
     ```javascript
@@ -105,7 +97,7 @@
     let tax2 = amount2 * 0.2; // Duplication
     ```
 
-### 9. **Proper Log Handling**
+### 8. **Proper Log Handling**
 - **Good Practice:** Use logging libraries and define log levels.
   - **JavaScript:** 
     ```javascript
@@ -116,7 +108,7 @@
 - **Bad Practice:** Use console.log for everything.
   - **JavaScript:** `console.log("Debug info");`
 
-### 10. **Type Definition**
+### 9. **Type Definition**
 - **Good Practice:** Use type definitions for clarity (TypeScript or strong typing in .NET).
   - **JavaScript:** 
     ```typescript
@@ -131,10 +123,10 @@
   - **JavaScript:** `let user: any;`
   - **.NET:** `dynamic user;`
 
-### 11. **Security**
+### 10. **Security**
 Address security vulnerabilities, including SQL injection, password management, and API key protection.
 
-### 12. **Proper Interface**
+### 11. **Proper Interface**
 - **Good Practice:** Use interfaces to define contracts.
   - **JavaScript:** 
     ```typescript
@@ -149,18 +141,11 @@ Address security vulnerabilities, including SQL injection, password management, 
   - **JavaScript:** `class UserService { /* implementation */ }`
   - **.NET:** `public class UserService { /* implementation */ }`
 
-### 14. **Proper Module Maintain**
-- **Good Practice:** Organize code into modules.
-  - **JavaScript:** 
-    ```javascript
-    export function fetchUser() { /* implementation */ }
-    ```
-  
-- **Bad Practice:** Use a single large file for multiple functionalities.
-  - **JavaScript:** `// all functions in one file`
+### 12. **Proper Module Maintain**
+Organize code into well-defined modules for easier maintenance.
 
 
-### 17. **Browser and Device Compatibility**
+### 13. **Browser and Device Compatibility**
 - **Good Practice:** Test across multiple browsers and devices.
   - **JavaScript:** Use tools like BrowserStack.
   
@@ -168,10 +153,10 @@ Address security vulnerabilities, including SQL injection, password management, 
   - **JavaScript:** `if (window.navigator.userAgent === "Chrome") { /* code */ }`
 
 
-### 19. **Using Appropriate Fonts**
+### 14. **Using Appropriate Fonts**
 Follow guidance of figma 
 
-### 20. **Image Form CDN**
+### 15. **Image Form CDN**
 - **Good Practice:** Use CDNs for optimized image loading.
   - **JavaScript:** `<img src="https://cdn
 
