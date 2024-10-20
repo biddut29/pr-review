@@ -7,46 +7,6 @@
   - **JavaScript:** `let fn = "John";`
   - **.NET:** `public class U { public string f; }`
 
-### 2. **Design Pattern**
-- **Good Practice:** Implement design patterns appropriately to solve common problems.
-  - **JavaScript:** Use Singleton for shared resources.
-    ```javascript
-    const Singleton = (function() {
-        let instance;
-        function createInstance() {
-            return new Object("I am the instance");
-        }
-        return {
-            getInstance: function() {
-                if (!instance) {
-                    instance = createInstance();
-                }
-                return instance;
-            }
-        };
-    })();
-    ```
-  - **.NET:** Use Repository Pattern for data access.
-    ```csharp
-    public interface IUserRepository { User GetUser(int id); }
-    public class UserRepository : IUserRepository { /* implementation */ }
-    ```
-  
-- **Bad Practice:** Avoid design patterns or misuse them.
-  - **JavaScript:** Using global variables to manage state.
-    ```javascript
-    let userSettings = {};
-    ```
-  - **.NET:** Directly accessing database in controllers without a repository.
-    ```csharp
-    public class UserController : Controller {
-        public IActionResult GetUser(int id) {
-            var user = _context.Users.Find(id); // Tight coupling
-            return View(user);
-        }
-    }
-    ```
-
 ### 3. **Error Handling**
 - **Good Practice:** Use structured error handling.
   - **JavaScript:** 
@@ -197,13 +157,6 @@
   - **JavaScript:** `class UserService { /* implementation */ }`
   - **.NET:** `public class UserService { /* implementation */ }`
 
-### 13. **Translation Added Properly**
-- **Good Practice:** Use internationalization libraries.
-  - **JavaScript:** `i18next` for translations.
-  
-- **Bad Practice:** Hardcoding strings in the code.
-  - **JavaScript:** `const greeting = "Hello";`
-
 ### 14. **Proper Module Maintain**
 - **Good Practice:** Organize code into modules.
   - **JavaScript:** 
@@ -214,19 +167,6 @@
 - **Bad Practice:** Use a single large file for multiple functionalities.
   - **JavaScript:** `// all functions in one file`
 
-### 15. **Lazy Loading**
-- **Good Practice:** Load resources only when needed.
-  - **JavaScript:** Use dynamic `import()`.
-  
-- **Bad Practice:** Load all resources at startup.
-  - **JavaScript:** `import './allResources.js';`
-
-### 16. **Proper Input and Output Maintenance**
-- **Good Practice:** Validate inputs and outputs.
-  - **JavaScript:** Use libraries for validation.
-  
-- **Bad Practice:** Accept any input without validation.
-  - **JavaScript:** `function processInput(data) { /* no validation */ }`
 
 ### 17. **Browser and Device Compatibility**
 - **Good Practice:** Test across multiple browsers and devices.
