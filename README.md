@@ -89,15 +89,22 @@ Maintain consistency throughout the codebase in terms of style and conventions.
     ```
 
 ### 8. **Proper Log Handling**
-- **Good Practice:** Use logging libraries and define log levels.
-  - **JavaScript:** 
-    ```javascript
-    const logger = require('winston');
-    logger.info('User fetched successfully');
-    ```
-  
-- **Bad Practice:** Use console.log for everything.
-  - **JavaScript:** `console.log("Debug info");`
+
+**Good Practice:** Use logging libraries and define log levels.
+
+**.NET Example:**
+```csharp
+ logger.Information("User with ID {UserId} fetched successfully", userId);
+```
+
+**Bad Practice:** Use `Console.WriteLine` for everything.
+
+**.NET Example:**
+```csharp
+
+ Console.WriteLine("Debug info: User fetched with ID " + userId);
+
+```
 
 ### 9. **Type Definition**
 - **Good Practice:** Use type definitions for clarity (TypeScript or strong typing in .NET).
