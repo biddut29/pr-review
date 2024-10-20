@@ -43,7 +43,8 @@
   - **.NET:** `public void Process() { }`
 
 ### 4. **Function Size**
-- **Good Practice:** Keep functions short and focused.
+- **Good Practice:** Keep functions short and focused, ideally not exceeding 15 lines.
+
   - **JavaScript:** 
     ```javascript
     function calculateArea(radius) {
@@ -89,22 +90,12 @@ Maintain consistency throughout the codebase in terms of style and conventions.
     ```
 
 ### 8. **Proper Log Handling**
-
-**Good Practice:** Use logging libraries and define log levels.
-
-**.NET Example:**
+https://learn.microsoft.com/en-us/dotnet/core/extensions/logging
+- **.NET Example:**
 ```csharp
  logger.Information("User with ID {UserId} fetched successfully", userId);
 ```
 
-**Bad Practice:** Use `Console.WriteLine` for everything.
-
-**.NET Example:**
-```csharp
-
- Console.WriteLine("Debug info: User fetched with ID " + userId);
-
-```
 
 ### 9. **Type Definition**
 - **Good Practice:** Use type definitions for clarity (TypeScript or strong typing in .NET).
@@ -122,7 +113,7 @@ Maintain consistency throughout the codebase in terms of style and conventions.
   - **.NET:** `dynamic user;`
 
 ### 10. **Security**
-Address security vulnerabilities, including SQL injection, password management, and API key protection.
+Avoid exposing sensitive keys such as API keys, tokens, or database credentials.
 
 ### 11. **Proper Interface**
 - **Good Practice:** Use interfaces to define contracts.
@@ -144,19 +135,13 @@ Organize code into well-defined modules for easier maintenance.
 
 
 ### 13. **Browser and Device Compatibility**
-- **Good Practice:** Test across multiple browsers and devices.
-  - **JavaScript:** Use tools like BrowserStack.
-  
-- **Bad Practice:** Assume all users use the same browser.
-  - **JavaScript:** `if (window.navigator.userAgent === "Chrome") { /* code */ }`
-
 
 ### 14. **Using Appropriate Fonts**
 Follow guidance of figma 
 
 ### 15. **Image Form CDN**
-- **Good Practice:** Use CDNs for optimized image loading.
-  - **JavaScript:** `<img src="https://cdn
+Use CDNs for optimized image loading.
+
 
 
 
