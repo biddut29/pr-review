@@ -77,11 +77,7 @@
     ```
 
 ### 6. **Coding Consistency**
-- **Good Practice:** Follow consistent naming and style conventions (e.g., ESLint, StyleCop).
-  - **JavaScript:** Use Prettier for formatting.
-  
-- **Bad Practice:** Inconsistent naming conventions and code styles.
-  - **JavaScript:** Mixing camelCase, snake_case, etc.
+Maintain consistency throughout the codebase in terms of style and conventions.
 
 ### 7. **Code Duplication**
 - **Good Practice:** Avoid duplicate code by creating reusable functions or components.
