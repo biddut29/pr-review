@@ -132,18 +132,7 @@
   - **.NET:** `dynamic user;`
 
 ### 11. **Security**
-- **Good Practice:** Sanitize inputs and use prepared statements.
-  - **JavaScript:** Use libraries like `validator.js` to validate input.
-  - **.NET:** 
-    ```csharp
-    using (var command = new SqlCommand("SELECT * FROM Users WHERE Username = @username", connection)) {
-        command.Parameters.AddWithValue("@username", username);
-    }
-    ```
-
-- **Bad Practice:** Concatenating SQL queries.
-  - **JavaScript:** `let query = "SELECT * FROM Users WHERE Username = '" + username + "'";`
-  - **.NET:** `var query = "SELECT * FROM Users WHERE Username = '" + username + "'";`
+Address security vulnerabilities, including SQL injection, password management, and API key protection.
 
 ### 12. **Proper Interface**
 - **Good Practice:** Use interfaces to define contracts.
@@ -178,19 +167,9 @@
 - **Bad Practice:** Assume all users use the same browser.
   - **JavaScript:** `if (window.navigator.userAgent === "Chrome") { /* code */ }`
 
-### 18. **Separation of Concerns and Dependency Injection**
-- **Good Practice:** Separate logic and use DI frameworks.
-  - **JavaScript:** Use frameworks like Angular for DI.
-  
-- **Bad Practice:** Tight coupling of components.
-  - **JavaScript:** `class UserController { constructor() { this.service = new UserService(); } }`
 
 ### 19. **Using Appropriate Fonts**
-- **Good Practice:** Use web-safe and appropriate fonts.
-  - **JavaScript:** Define in CSS: `font-family: 'Arial', sans-serif;`
-  
-- **Bad Practice:** Use overly decorative fonts that harm readability.
-  - **JavaScript:** `font-family: 'Papyrus', cursive;`
+Follow guidance of figma 
 
 ### 20. **Image Form CDN**
 - **Good Practice:** Use CDNs for optimized image loading.
